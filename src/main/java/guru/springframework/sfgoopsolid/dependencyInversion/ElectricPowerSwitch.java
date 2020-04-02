@@ -1,0 +1,31 @@
+package guru.springframework.sfgoopsolid.dependencyInversion;
+
+import guru.springframework.sfgoopsolid.dependencyInversion.interfaces.Switch;
+import guru.springframework.sfgoopsolid.dependencyInversion.interfaces.Switchable;
+
+public class ElectricPowerSwitch implements Switch {
+    public Switchable client;
+    public boolean on;
+
+    public ElectricPowerSwitch(Switchable client) {
+        this.client = client;
+        this.on = false;
+    }
+
+    @Override
+    public boolean isOn() {
+        return this.on;
+    }
+
+    @Override
+    public void press() {
+        boolean checkOn = isOn();
+        if (checkOn) {
+            this.client.turnOff();
+            this.on = false;
+        } else {
+            this.client.turnOn();
+            this.on = true;
+        }
+    }
+}
