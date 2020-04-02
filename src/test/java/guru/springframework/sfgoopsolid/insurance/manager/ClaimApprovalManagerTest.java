@@ -1,10 +1,8 @@
-package guru.springframework.sfgoopsolid.manager;
+package guru.springframework.sfgoopsolid.insurance.manager;
 
-import guru.springframework.sfgoopsolid.surveyor.HealthInsuranceSurveyor;
-import guru.springframework.sfgoopsolid.surveyor.VehicleInsuranceSurveyor;
+import guru.springframework.sfgoopsolid.insurance.surveyor.HealthInsuranceSurveyor;
+import guru.springframework.sfgoopsolid.insurance.surveyor.VehicleInsuranceSurveyor;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class ClaimApprovalManagerTest {
 

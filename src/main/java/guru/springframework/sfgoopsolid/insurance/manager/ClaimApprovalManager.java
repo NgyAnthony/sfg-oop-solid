@@ -1,6 +1,6 @@
-package guru.springframework.sfgoopsolid.manager;
+package guru.springframework.sfgoopsolid.insurance.manager;
 
-import guru.springframework.sfgoopsolid.surveyor.InsuranceSurveyor;
+import guru.springframework.sfgoopsolid.insurance.surveyor.InsuranceSurveyor;
 
 public class ClaimApprovalManager {
     public void processClaim(InsuranceSurveyor surveyor) {

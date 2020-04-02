@@ -1,4 +1,4 @@
-package guru.springframework.sfgoopsolid.surveyor;
+package guru.springframework.sfgoopsolid.insurance.surveyor;
 
 public class HealthInsuranceSurveyor extends InsuranceSurveyor {
     @Override
